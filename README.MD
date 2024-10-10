@@ -1,25 +1,31 @@
 # GREENISH GITHUB MEANS NOTHING
 
-This is just a repo to say: GREENISH GITHUB MEANS NOTHING!!!
+This repository exists to make a point: **GREENISH GITHUB MEANS NOTHING!!!**
 
-`cronjob.sh` Is a simple shell script to run daily (or at your own schedule) to add a commit in you github. Simple!
+`cronjob.sh` is a simple shell script designed to run daily (or on your own schedule) to add a commit to your GitHub. Simple!
 
-## After saying it..
+## Why This Matters
 
-If you're also pissed off with people thinking that a greenish github means that you work more or better...
+If you're frustrated with the misconception that a green GitHub activity graph means you're a more productive or better developer, this is for you.
 
-- Clone this Repo
+### Steps to Use
 
-- Setup your own repo on Github using SSH and make sure it works to make a git commit && pull
+1. **Clone this Repository**
 
-- Run: `git remote set-url origin <YOUR GIT REPO SSH URL>`
+2. **Set Up Your Own Repository on GitHub**
+   - Use SSH and ensure it works for making commits and pulls.
 
-  - Alternativelly, you can also run: `code .git/config` or `vim .git/config` and edit the URL adding the yours
+3. **Update the Remote URL**
+   - Run: `git remote set-url origin <YOUR GIT REPO SSH URL>`
+   - Alternatively, you can edit the URL directly by running: `code .git/config` or `vim .git/config` and updating the URL.
 
-- Run: `crontab -e`
+4. **Schedule the Script**
+   - Run: `crontab -e`
+   - Add the following line: `0 1 * * * bash <FOLDER YOU CLONED THE REPO>/greenish-github-means-nothing/cronjob.sh`
 
-- Add the following line: `0 1 * * * bash <FOLDER YOU CLONED THE REPO>/greenish-github-means-nothing/cronjob.sh`
+5. **Enjoy the Green**
+   - Now, you can enjoy being considered a top-notch developer just because your GitHub activity graph is green.
 
-- Be happy getting considered a fking good dev just because your github is green
+### Note
+- `0 10 * * *` means daily at 10:00 AM. To change it to 1:00 PM, use: `0 13 * * *`.
 
-NOTE: `0 10 * * *` means daily at 10:00 AM. To change to 1:00 PM for example, use: `0 13 * * *`
